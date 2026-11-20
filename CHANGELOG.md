@@ -10,7 +10,7 @@ The first test version, looking for mages to try it out. Everything below is bui
 - **Food and Water buttons**: target a player and click to conjure the best rank of food or water you know that they can use. With no target, or an enemy or NPC targeted, it conjures for your own level.
 - The buttons show the icon of what they'll make and how many you're carrying, and their tooltip says who it's for.
 - **Key bindings** for both buttons (Key Bindings > AddOns).
-- **Trade button**: click it to open a trade with your target, then click again to put the right food and water stacks in. You still press Accept yourself.
+- **Trade button**: click it to open a trade with your target, then click again to put the right food and water stacks in. You still confirm the trade yourself.
 - **Group view** (`/nfw group`): every party or raid member with the rank they need, a summary such as "3 x Sweet Roll", and Food, Water and Trade buttons on each row.
 - **Low-stock warning**: a reminder when your own conjured food or water drops below a number you choose, as a chat line, a short sound or a glow on the button.
 - **Settings** (`/nfw`): lock or move the bar, vertical layout, scale, item counts, how many stacks to trade, and the low-stock options. They also appear in Nullgate's Addon Config when installed.
@@ -20,7 +20,7 @@ The first test version, looking for mages to try it out. Everything below is bui
 ### Good to know
 - Spells can't be changed in combat. If your target changes mid-fight, the buttons show a small red mark and update as soon as combat ends.
 - The addon only runs for mages.
-- English only for now.
+- **15 languages**: English, Deutsch, Español, Français, Italiano, Português (Brasil), Русский, 한국어, 简体中文, 繁體中文, 日本語, Polski, Türkçe, Українська and Tiếng Việt. The game's language is used automatically; pick another in the settings (it applies after /reload). Translations were made with machine assistance.
 
 ## [0.1.0] - Unreleased: Rank data
 

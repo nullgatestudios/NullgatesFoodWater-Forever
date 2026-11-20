@@ -96,6 +96,32 @@ function Options.Build(container)
     y = Check(container, L["Short sound"], function() return stock.sound end, function(v) stock.sound = v end, y)
     y = Check(container, L["Glow on the button"], function() return stock.glow end, function(v) stock.glow = v end, y)
 
+    y = y - 8
+    y = Header(container, L["Language"], y)
+    local function LanguageName()
+        if db.language == "auto" then return L["Automatic (game language)"] end
+        for _, entry in ipairs(ns.LANGUAGES) do
+            if entry.code == db.language then return entry.name end
+        end
+        return db.language
+    end
+    local picker = Button(container, LanguageName(), 16, y, nil)
+    picker:SetWidth(230)
+    picker:SetScript("OnClick", function(self)
+        -- auto, then every language in order, then back to auto
+        local nextCode = ns.LANGUAGES[1].code
+        if db.language ~= "auto" then
+            nextCode = "auto"
+            for i, entry in ipairs(ns.LANGUAGES) do
+                if entry.code == db.language and ns.LANGUAGES[i + 1] then nextCode = ns.LANGUAGES[i + 1].code end
+            end
+        end
+        db.language = nextCode
+        self:SetText(LanguageName())
+        ns.Print(L["The language changes after you type /reload."])
+    end)
+    y = y - 32
+
     local note = container:CreateFontString(nil, "ARTWORK", "GameFontDisableSmall")
     note:SetPoint("TOPLEFT", container, "TOPLEFT", 16, y - 8)
     note:SetWidth(330)
@@ -107,7 +133,7 @@ end
 local function OwnWindow()
     if not window then
         window = CreateFrame("Frame", "NullgatesFoodWaterOptions", UIParent, "BasicFrameTemplateWithInset")
-        window:SetSize(380, 520)
+        window:SetSize(380, 580)
         window:SetPoint("CENTER")
         window:SetMovable(true)
         window:EnableMouse(true)

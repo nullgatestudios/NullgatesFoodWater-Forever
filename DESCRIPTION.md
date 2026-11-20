@@ -11,10 +11,10 @@ No more handing a level 20 rogue water they can't drink, or giving a level 50 wa
 - **Food and Water buttons**: they pick the right rank for whoever you're targeting. Each button shows the icon of what it will make and how many you're carrying, and its tooltip says who it's for.
 - **Every rank in WoW Forever**, read straight from the game client, including the Forever-only **Mountain Spring Water** (20 per cast).
 - **Key bindings** for both buttons, under Key Bindings > AddOns.
-- **Trade helper**: click Trade to open a trade with your target, then click again to put the right food and water stacks in. You always press Accept yourself.
+- **Trade helper**: click Trade to open a trade with your target, then click again to put the right food and water stacks in. You always confirm the trade yourself.
 - **Group view**: every party or raid member with the food and water they need, a summary such as "3 x Sweet Roll, 1 x Sourdough", and Food, Water and Trade buttons on each row.
 - **Low-stock warning**: a gentle reminder when your own conjured food or water drops below a number you choose, as a chat line, a short sound or a glow on the button. It only warns once until you restock, and stays quiet in combat.
-- **Simple settings**: lock and move the bar, vertical or horizontal layout, scale, item counts, how many stacks to trade, and the low-stock options.
+- **Simple settings**: lock and move the bar, vertical or horizontal layout, scale, item counts, how many stacks to trade, the low-stock options and the language.
 
 ---
 
@@ -54,4 +54,4 @@ The game doesn't allow spells to be changed during combat. If your target change
 
 - The addon only runs for mages.
 - It never accepts a trade for you.
-- English only for now.
+- Available in 15 languages: English, Deutsch, Español, Français, Italiano, Português (Brasil), Русский, 한국어, 简体中文, 繁體中文, 日本語, Polski, Türkçe, Українська and Tiếng Việt. The game's language is used automatically, and you can pick another in the settings. The translations were made with machine assistance; corrections are welcome.

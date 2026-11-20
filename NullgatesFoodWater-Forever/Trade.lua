@@ -66,7 +66,7 @@ function Trade.Fill()
     end
     if ClearCursor then ClearCursor() end
     if #placed > 0 then
-        ns.Print(string.format(L["Put in the trade for %s (level %d): %s. Press Accept when ready."], tostring(name), level, table.concat(placed, ", ")))
+        ns.Print(string.format(L["Put in the trade for %s (level %d): %s. Click Trade when you're ready."], tostring(name), level, table.concat(placed, ", ")))
     end
     if #missing > 0 then
         ns.Print(string.format(L["None in your bags: %s. Conjure some first."], table.concat(missing, ", ")))

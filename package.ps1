@@ -31,7 +31,7 @@ if ($changelog -notmatch "## \[$([regex]::Escape($tocVersion))\]") {
 }
 
 if (Get-Command lua -ErrorAction SilentlyContinue) {
-    foreach ($test in "run.lua", "smoke.lua") {
+    foreach ($test in "run.lua", "smoke.lua", "locales.lua") {
         & lua (Join-Path $root "tests\$test")
         if ($LASTEXITCODE -ne 0) { throw "Tests failed ($test); nothing was packaged." }
     }

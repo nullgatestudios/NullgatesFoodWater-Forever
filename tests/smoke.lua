@@ -156,7 +156,7 @@ bags[0] = { [1] = { itemID = 3772, stackCount = 20 }, [2] = { itemID = 1487, sta
 NullgatesFoodWaterTrade.scripts.OnClick(NullgatesFoodWaterTrade)
 OK(#clicked == 2 and clicked[1] == 1 and clicked[2] == 2, "the open trade gets one stack each in slots 1 and 2")
 OK(picked[1] == 3772 and picked[2] == 1487, "Spring Water and Pumpernickel for a level 30 partner")
-OK(LastPrint():find("Accept", 1, true) ~= nil, "it reminds you to press Accept yourself")
+OK(LastPrint():find("Click Trade", 1, true) ~= nil, "it reminds you to click Trade yourself")
 picked, clicked = {}, {}
 bags[0] = {}
 NullgatesFoodWaterTrade.scripts.OnClick(NullgatesFoodWaterTrade)

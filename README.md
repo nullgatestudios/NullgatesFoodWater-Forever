@@ -23,7 +23,7 @@ Spells can't be swapped in combat, so if your target changes mid-fight the butto
 ## Features
 
 - **Food and Water buttons** that follow your target's level, with key bindings, item counts and a movable bar.
-- **Trade helper**: open a trade with your target and drop in the right food and water stacks in one click. You still press Accept yourself.
+- **Trade helper**: open a trade with your target and drop in the right food and water stacks in one click. You still confirm the trade yourself.
 - **Group view**: see what every party or raid member needs, with batch hints like *"3 x Sweet Roll"*, and conjure or trade from each row.
 - **Low-stock warning**: a gentle reminder when your own conjured food or water runs low.
 - **Settings** in its own window or inside Nullgate's Addon Config.
@@ -64,7 +64,7 @@ Not released yet. Once it is:
 | Task | Command |
 | :--- | :--- |
 | Refresh the rank data after a client patch | `python tools/generate_conjure_ranks.py` (reads the latest Forever build from wago.tools) |
-| Run the tests | `lua tests/run.lua` and `lua tests/smoke.lua` |
+| Run the tests | `lua tests/run.lua`, `lua tests/smoke.lua` and `lua tests/locales.lua` |
 | Build `zips/NullgatesFoodWater-Forever-<version>.zip` | `.\package.ps1` (or `.\package.ps1 -Version 0.2.0` to set the version first) |
 
 Publishing a GitHub release uploads that version to CurseForge (`.github/workflows/curseforge.yml`); pushes only run the tests.

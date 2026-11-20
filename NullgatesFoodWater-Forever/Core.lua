@@ -10,6 +10,7 @@ ns.DEFAULTS = {
     scale = 1,
     tradeStacks = 1,
     groupShown = false,
+    language = "auto",
     lowStock = { enabled = true, threshold = 10, chat = true, sound = false, glow = true },
 }
 
@@ -46,10 +47,12 @@ function ns.WhenSafe(key, fn)
     return true
 end
 
--- Key bindings (Bindings.xml) for the secure buttons.
+-- Key binding names (Bindings.xml), set once the language is known.
 BINDING_HEADER_NULLGATESFOODWATER = "Nullgate's Food & Water"
-_G["BINDING_NAME_CLICK NullgatesFoodWaterFood:LeftButton"] = L["Conjure food for your target"]
-_G["BINDING_NAME_CLICK NullgatesFoodWaterWater:LeftButton"] = L["Conjure water for your target"]
+local function NameBindings()
+    _G["BINDING_NAME_CLICK NullgatesFoodWaterFood:LeftButton"] = L["Conjure food for your target"]
+    _G["BINDING_NAME_CLICK NullgatesFoodWaterWater:LeftButton"] = L["Conjure water for your target"]
+end
 
 local events = CreateFrame("Frame")
 local active = false -- the bar and its events run for mages only
@@ -60,6 +63,8 @@ local function OnEvent(_, event, arg1)
             if type(NullgatesFoodWaterDB) ~= "table" then NullgatesFoodWaterDB = {} end
             Merge(NullgatesFoodWaterDB, ns.DEFAULTS)
             ns.db = NullgatesFoodWaterDB
+            ns.SetLanguage(ns.db.language)
+            NameBindings()
         end
         if arg1 == addonName or arg1 == "NullgatesAddonConfig-Forever" then ns.Options.RegisterHub() end
     elseif event == "PLAYER_LOGIN" then

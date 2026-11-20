@@ -24,7 +24,7 @@ WoW blocks addon code from choosing and casting a spell at the moment you click.
 - No target (or a target that isn't a friendly player) means conjure for your own level.
 - Mage only: the addon stays off for other classes.
 - The rank table is generated from Forever client data (wago.tools), never typed by hand.
-- The addon never completes a trade. The player always presses Accept.
+- The addon never completes a trade. The player always confirms the trade.
 
 ---
 
