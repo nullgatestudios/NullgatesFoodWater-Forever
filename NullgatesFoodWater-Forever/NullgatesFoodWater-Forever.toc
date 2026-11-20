@@ -19,11 +19,6 @@ Locales\ruRU.lua
 Locales\koKR.lua
 Locales\zhCN.lua
 Locales\zhTW.lua
-Locales\jaJP.lua
-Locales\plPL.lua
-Locales\trTR.lua
-Locales\ukUA.lua
-Locales\viVN.lua
 Data\ConjureRanks.lua
 Ranks.lua
 Items.lua

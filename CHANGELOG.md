@@ -20,7 +20,7 @@ The first test version, looking for mages to try it out. Everything below is bui
 ### Good to know
 - Spells can't be changed in combat. If your target changes mid-fight, the buttons show a small red mark and update as soon as combat ends.
 - The addon only runs for mages.
-- **15 languages**: English, Deutsch, Español, Français, Italiano, Português (Brasil), Русский, 한국어, 简体中文, 繁體中文, 日本語, Polski, Türkçe, Українська and Tiếng Việt. The game's language is used automatically; pick another in the settings (it applies after /reload). Translations were made with machine assistance.
+- **10 languages**: English, Deutsch, Español, Français, Italiano, Português (Brasil), Русский, 한국어, 简体中文 and 繁體中文 (every language the game client runs in). The game's language is used automatically; pick another in the settings (it applies after /reload). Translations were made with machine assistance.
 
 ## [0.1.0] - Unreleased: Rank data
 

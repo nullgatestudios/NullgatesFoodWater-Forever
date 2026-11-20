@@ -54,4 +54,4 @@ The game doesn't allow spells to be changed during combat. If your target change
 
 - The addon only runs for mages.
 - It never accepts a trade for you.
-- Available in 15 languages: English, Deutsch, Español, Français, Italiano, Português (Brasil), Русский, 한국어, 简体中文, 繁體中文, 日本語, Polski, Türkçe, Українська and Tiếng Việt. The game's language is used automatically, and you can pick another in the settings. The translations were made with machine assistance; corrections are welcome.
+- Available in 10 languages: English, Deutsch, Español, Français, Italiano, Português (Brasil), Русский, 한국어, 简体中文 and 繁體中文 (every language the game client runs in). The game's language is used automatically, and you can pick another in the settings. The translations were made with machine assistance; corrections are welcome.

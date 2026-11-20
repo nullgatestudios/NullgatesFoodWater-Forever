@@ -48,8 +48,8 @@ for code, strings in pairs(registered) do
         if value then OK(Placeholders(value) == Placeholders(key), code .. " keeps the placeholders of: " .. key) end
     end
 end
-OK(count == 14, "14 language packs besides English (" .. count .. ")")
-OK(#ns.LANGUAGES == 15, "15 languages in the Language setting")
+OK(count == 9, "9 language packs besides English (" .. count .. ")")
+OK(#ns.LANGUAGES == 10, "10 languages in the Language setting, the ones the game client runs in")
 
 -- Selection: automatic follows the game; esMX uses Spanish; a picked language wins.
 locale = "deDE"; ns.SetLanguage("auto")
@@ -58,8 +58,8 @@ locale = "esMX"; ns.SetLanguage("auto")
 OK(ns.ActiveLanguage() == "esES", "a Mexican Spanish client uses the Spanish pack")
 locale = "enGB"; ns.SetLanguage("auto")
 OK(ns.ActiveLanguage() == "enUS" and ns.L["Trade"] == "Trade", "British English uses English")
-ns.SetLanguage("jaJP")
-OK(ns.L["Trade"] == "トレード", "a picked language (Japanese) wins over the game language")
+ns.SetLanguage("frFR")
+OK(ns.L["Trade"] == "Échange", "a picked language (French) wins over the game language")
 OK(ns.L["Not a key"] == "Not a key", "a missing key falls back to English")
 
 io.write(string.format("locales: %d checks, %d failure(s)\n", checks, failures))
