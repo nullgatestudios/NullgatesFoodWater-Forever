@@ -4,7 +4,10 @@ Thumbs.db
 desktop.ini
 .vscode/
 .idea/
+__pycache__/
 
-# Build output
+# Build output (the zips folder itself is kept)
 *.zip
-zips/
+dist/
+zips/*
+!zips/.gitkeep

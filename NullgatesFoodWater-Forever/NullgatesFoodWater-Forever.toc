@@ -1,0 +1,11 @@
+## Interface: 16001
+## Title: |cff00c0ffNullgate's Food & Water|r - |cffffd100Forever|r
+## Notes: Target a player and click to conjure the right rank of food or water for their level.
+## Author: Nullgate Studios
+## Version: 0.1.0
+## IconTexture: Interface\Icons\INV_Drink_18
+## X-License: Restricted - Source Available (All Rights Reserved, No Derivatives)
+## X-Website: https://github.com/nullgatestudios/NullgatesFoodWater-Forever
+
+Data\ConjureRanks.lua
+Ranks.lua

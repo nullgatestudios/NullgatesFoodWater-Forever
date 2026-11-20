@@ -1,6 +1,6 @@
 # Nullgate's Food & Water - Forever
 
-> **Status: in planning.** No release yet. See [PLAN.md](PLAN.md) for the roadmap.
+> **Status: in development** (phase 1 of [PLAN.md](PLAN.md) done: the rank data). No release yet.
 
 **Nullgate's Food & Water** is a mage addon for **World of Warcraft: Forever**. Target a player, click **Food** or **Water**, and you conjure the highest rank they can use. You won't hand a level 20 rogue water they can't drink, or make a level 50 warrior settle for bread.
 
@@ -54,6 +54,18 @@ Not released yet. Once it is:
 
 - **Nullgate's Addon Config**: one settings hub and profile manager for the whole suite.
 - **Nullgate's Action Bars**, **Bags**, **Chat**, **Maps**, **Quest Tracker**, **Unit Toggles** and **Blacklist**.
+
+---
+
+## Development
+
+| Task | Command |
+| :--- | :--- |
+| Refresh the rank data after a client patch | `python tools/generate_conjure_ranks.py` (reads the latest Forever build from wago.tools) |
+| Run the tests | `lua tests/run.lua` |
+| Build `zips/NullgatesFoodWater-Forever-<version>.zip` | `.\package.ps1` (or `.\package.ps1 -Version 0.2.0` to set the version first) |
+
+Publishing a GitHub release uploads that version to CurseForge (`.github/workflows/curseforge.yml`); pushes only run the tests.
 
 ---
 

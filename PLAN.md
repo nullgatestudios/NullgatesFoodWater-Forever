@@ -40,7 +40,7 @@ Confirm in the Forever client:
 
 **Done when:** a notes file lists which calls work and which don't. Phases 4 and 5 are adjusted to match.
 
-## Phase 1: Rank data
+## Phase 1: Rank data (done, v0.1.0)
 
 - **Generator:** a script in `tools/` reads the Forever client tables (spells, what each spell creates, each item's required level) and writes `Data/ConjureRanks.lua`, like Quest Tracker's `generate_forever_quests.py`.
 - **Pick function:** from a level, choose the highest rank you know whose item that level can use.
