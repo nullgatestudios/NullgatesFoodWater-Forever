@@ -1,0 +1,5 @@
+<Bindings>
+    <!-- Secure click bindings: each casts its button's current rank -->
+    <Binding name="CLICK NullgatesFoodWaterFood:LeftButton" header="NULLGATESFOODWATER"/>
+    <Binding name="CLICK NullgatesFoodWaterWater:LeftButton"/>
+</Bindings>

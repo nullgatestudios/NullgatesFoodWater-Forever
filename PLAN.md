@@ -30,7 +30,7 @@ WoW blocks addon code from choosing and casting a spell at the moment you click.
 
 ## Phase 0: Check in the game (about 1 day)
 
-**Status:** built as `/nfw check` (v0.1.0). Waiting for in-game results.
+**Status:** built as `/nfw check`; no mage available, so beta testers run it. The code shows a numeric spell ID casts that exact rank (`CastSpellByID`), and conjuring needs no target.
 
 Confirm in the Forever client:
 
@@ -50,7 +50,7 @@ Confirm in the Forever client:
 
 **Done when:** the generated table matches the phase 0 notes and the tests pass.
 
-## Phase 2: The buttons
+## Phase 2: The buttons (built, in 1.0.0-beta.1)
 
 - **Two secure buttons**, Food and Water, on a small movable bar.
 - **Whose level:** a friendly player target uses that player's level. Anyone or anything else uses your own.
@@ -61,7 +61,7 @@ Confirm in the Forever client:
 
 **Done when:** in game, targeting players of different levels changes the buttons, the right rank is cast, and nothing errors in combat.
 
-## Phase 3: Settings and first release (v1.0)
+## Phase 3: Settings and first release (v1.0) (built, in 1.0.0-beta.1)
 
 - **Settings:** lock or move the bar, its scale, show counts, horizontal or vertical layout, hide when not a mage.
 - **Suite fit:** it appears in Nullgate's Addon Config when installed, and uses the suite's look.
@@ -70,7 +70,7 @@ Confirm in the Forever client:
 
 **Done when:** the zip installs clean and passes in-game testing. Release only when the owner says so.
 
-## Phase 4: Trade helper (v1.1)
+## Phase 4: Trade helper (v1.1) (built, in 1.0.0-beta.1)
 
 - **Trade button:** a third button opens a trade with your target.
 - **Filling the window:** when the trade window opens, one click puts the right food and water stacks in. The default is one stack of each, and the number of stacks is a setting.
@@ -79,7 +79,7 @@ Confirm in the Forever client:
 
 **Done when:** trading a party member puts the correct items in the window, and nothing is traded without the player's click.
 
-## Phase 5: Group view (v1.2)
+## Phase 5: Group view (v1.2) (built, in 1.0.0-beta.1)
 
 - **Panel:** lists party or raid members, each with the food and water rank they need and their level.
 - **Clicking a row:** conjures for that member, if phase 0 confirms one-press target-and-cast. Otherwise it targets them, and the Food and Water buttons update.
@@ -88,7 +88,7 @@ Confirm in the Forever client:
 
 **Done when:** in a group with mixed levels, the panel shows the right items for everyone and clicking works.
 
-## Phase 6: Low-stock warning (v1.3)
+## Phase 6: Low-stock warning (v1.3) (built, in 1.0.0-beta.1)
 
 - **Reminder:** fires when your own conjured food or water drops below a number you set. Choose a chat line, a short sound, or a glow on the button.
 - **Quiet times:** it stays quiet in combat.

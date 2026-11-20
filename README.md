@@ -1,6 +1,6 @@
 # Nullgate's Food & Water - Forever
 
-> **Status: in development** (phase 1 of [PLAN.md](PLAN.md) done: the rank data). No release yet.
+> **Status: beta** (1.0.0-beta.1). Looking for mages to test it. See [CHANGELOG.md](CHANGELOG.md).
 
 **Nullgate's Food & Water** is a mage addon for **World of Warcraft: Forever**. Target a player, click **Food** or **Water**, and you conjure the highest rank they can use. You won't hand a level 20 rogue water they can't drink, or make a level 50 warrior settle for bread.
 
@@ -20,24 +20,25 @@ Spells can't be swapped in combat, so if your target changes mid-fight the butto
 
 ---
 
-## Planned Features
+## Features
 
-| Version | Feature |
-| :--- | :--- |
-| **1.0** | Food and Water buttons that follow your target's level, key bindings, item counts, a movable bar, settings, and Nullgate's Addon Config support. |
-| **1.1** | **Trade helper**: open a trade with your target and drop in the right food and water stacks in one click. You still press Accept yourself. |
-| **1.2** | **Group view**: see what every party or raid member needs, with batch hints like *"3 players need Sweet Roll"*. |
-| **1.3** | **Low-stock warning**: a gentle reminder when your own conjured food or water runs low. |
+- **Food and Water buttons** that follow your target's level, with key bindings, item counts and a movable bar.
+- **Trade helper**: open a trade with your target and drop in the right food and water stacks in one click. You still press Accept yourself.
+- **Group view**: see what every party or raid member needs, with batch hints like *"3 x Sweet Roll"*, and conjure or trade from each row.
+- **Low-stock warning**: a gentle reminder when your own conjured food or water runs low.
+- **Settings** in its own window or inside Nullgate's Addon Config.
 
 ---
 
-## Slash Commands (planned)
+## Slash Commands
 
 | Command | Action |
 | :--- | :--- |
 | `/nfw` or `/foodwater` | Open the settings. |
+| `/nfw group` | Show or hide the group view. |
+| `/nfw lock` / `/nfw unlock` | Lock or unlock the bar. |
 | `/nfw reset` | Reset the bar's position. |
-| `/nfw check` | Test what the addon needs in your game client and save the results (available now). |
+| `/nfw check` | Test what the addon needs in your game client and save the results. |
 
 ---
 

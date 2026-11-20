@@ -2,6 +2,26 @@
 
 All notable changes to **Nullgate's Food & Water - Forever** are documented below.
 
+## [1.0.0-beta.1] - 2026-11-20: First Beta
+
+The first test version, looking for mages to try it out. Everything below is built and tested outside the game, but not yet on a real mage, so please report anything that doesn't work.
+
+### Added
+- **Food and Water buttons**: target a player and click to conjure the best rank of food or water you know that they can use. With no target, or an enemy or NPC targeted, it conjures for your own level.
+- The buttons show the icon of what they'll make and how many you're carrying, and their tooltip says who it's for.
+- **Key bindings** for both buttons (Key Bindings > AddOns).
+- **Trade button**: click it to open a trade with your target, then click again to put the right food and water stacks in. You still press Accept yourself.
+- **Group view** (`/nfw group`): every party or raid member with the rank they need, a summary such as "3 x Sweet Roll", and Food, Water and Trade buttons on each row.
+- **Low-stock warning**: a reminder when your own conjured food or water drops below a number you choose, as a chat line, a short sound or a glow on the button.
+- **Settings** (`/nfw`): lock or move the bar, vertical layout, scale, item counts, how many stacks to trade, and the low-stock options. They also appear in Nullgate's Addon Config when installed.
+- **Every rank in WoW Forever**, read straight from the game client, including the Forever-only **Mountain Spring Water** (20 per cast).
+- `/nfw check`: a self test that records what the addon needs in your game client, for reporting problems.
+
+### Good to know
+- Spells can't be changed in combat. If your target changes mid-fight, the buttons show a small red mark and update as soon as combat ends.
+- The addon only runs for mages.
+- English only for now.
+
 ## [0.1.0] - Unreleased: Rank data
 
 ### Added
