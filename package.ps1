@@ -31,8 +31,10 @@ if ($changelog -notmatch "## \[$([regex]::Escape($tocVersion))\]") {
 }
 
 if (Get-Command lua -ErrorAction SilentlyContinue) {
-    & lua (Join-Path $root "tests\run.lua")
-    if ($LASTEXITCODE -ne 0) { throw "Tests failed; nothing was packaged." }
+    foreach ($test in "run.lua", "smoke.lua") {
+        & lua (Join-Path $root "tests\$test")
+        if ($LASTEXITCODE -ne 0) { throw "Tests failed ($test); nothing was packaged." }
+    }
 } else {
     Write-Warning "lua is not installed, so the tests were skipped."
 }

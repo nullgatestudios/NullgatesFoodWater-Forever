@@ -6,10 +6,11 @@ local _, ns = ...
 local Ranks = {}
 ns.Ranks = Ranks
 
--- True when the player knows this exact rank. Classic clients report each rank's
--- spell ID separately; IsPlayerSpell is the fallback on clients without IsSpellKnown.
+-- True when the player knows this exact rank (each rank has its own spell ID).
+-- The modern C_SpellBook call first, then the older globals; /nfw check reports which
+-- of them this client has and what each says.
 function Ranks.IsKnown(spellID)
-    local known = IsSpellKnown or IsPlayerSpell
+    local known = (C_SpellBook and C_SpellBook.IsSpellKnown) or IsSpellKnown or IsPlayerSpell
     return known ~= nil and known(spellID) == true
 end
 

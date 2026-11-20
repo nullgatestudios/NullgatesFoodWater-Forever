@@ -30,6 +30,8 @@ WoW blocks addon code from choosing and casting a spell at the moment you click.
 
 ## Phase 0: Check in the game (about 1 day)
 
+**Status:** built as `/nfw check` (v0.1.0). Waiting for in-game results.
+
 Confirm in the Forever client:
 
 - A secure button set to a specific rank (for example `Conjure Water(Rank 5)`) casts that rank on click.

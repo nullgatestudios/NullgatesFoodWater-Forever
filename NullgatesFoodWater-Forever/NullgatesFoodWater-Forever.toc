@@ -4,8 +4,11 @@
 ## Author: Nullgate Studios
 ## Version: 0.1.0
 ## IconTexture: Interface\Icons\INV_Drink_18
+## SavedVariables: NullgatesFoodWaterDB
 ## X-License: Restricted - Source Available (All Rights Reserved, No Derivatives)
 ## X-Website: https://github.com/nullgatestudios/NullgatesFoodWater-Forever
 
 Data\ConjureRanks.lua
 Ranks.lua
+Check.lua
+Core.lua

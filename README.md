@@ -37,6 +37,7 @@ Spells can't be swapped in combat, so if your target changes mid-fight the butto
 | :--- | :--- |
 | `/nfw` or `/foodwater` | Open the settings. |
 | `/nfw reset` | Reset the bar's position. |
+| `/nfw check` | Test what the addon needs in your game client and save the results (available now). |
 
 ---
 
@@ -62,7 +63,7 @@ Not released yet. Once it is:
 | Task | Command |
 | :--- | :--- |
 | Refresh the rank data after a client patch | `python tools/generate_conjure_ranks.py` (reads the latest Forever build from wago.tools) |
-| Run the tests | `lua tests/run.lua` |
+| Run the tests | `lua tests/run.lua` and `lua tests/smoke.lua` |
 | Build `zips/NullgatesFoodWater-Forever-<version>.zip` | `.\package.ps1` (or `.\package.ps1 -Version 0.2.0` to set the version first) |
 
 Publishing a GitHub release uploads that version to CurseForge (`.github/workflows/curseforge.yml`); pushes only run the tests.
