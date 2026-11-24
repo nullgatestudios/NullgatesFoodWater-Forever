@@ -25,8 +25,21 @@ local function Log(text)
         log[#log + 1] = text
     end
     print("|cff00c0ffNullgate's Food & Water check:|r " .. text)
+    if NullgateReport then NullgateReport.Update("food-water") end
 end
 Check.Log = Log
+
+-- Opens the report window every Nullgate addon shares (NullgateReport.lua) with this check's log,
+-- ready to copy and paste into the report form on our website.
+function Check.ShowReport()
+    local L = ns.L
+    return NullgateReport.Show({
+        slug = "food-water", name = "Nullgate's Food & Water", addon = "NullgatesFoodWater-Forever", command = "/nfw check",
+        lines = function() return NullgatesFoodWaterDB and NullgatesFoodWaterDB.check end,
+        title = L["Bug report"], selectAll = L["Select all"], selectLink = L["Select link"],
+        help = L["Press Ctrl+C to copy this report, then paste it into a new report at the link below, with a few words on what happened."],
+    })
+end
 
 local function Exists(path)
     local value = _G
@@ -156,7 +169,7 @@ end
 local function BuildPanel()
     panel = CreateFrame("Frame", "NullgatesFoodWaterCheck", UIParent, "BasicFrameTemplateWithInset")
     panel:SetSize(300, 230)
-    panel:SetPoint("CENTER")
+    panel:SetPoint("TOPLEFT", NullgateReport.Frame(), "TOPRIGHT", 4, 0)
     panel:SetMovable(true)
     panel:EnableMouse(true)
     panel:RegisterForDrag("LeftButton")
@@ -242,4 +255,5 @@ function Check.Run()
     if not panel then BuildPanel() end
     panel:Show()
     Log("now click buttons 1 to 5 in the check window (be in a party for 3, target a player for 4 and 5)")
+    Check.ShowReport()
 end

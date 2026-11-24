@@ -2,7 +2,7 @@
 ## Title: |cff00c0ffNullgate's Food & Water|r - |cffffd100Forever|r
 ## Notes: Target a player and click to conjure the right rank of food or water for their level.
 ## Author: Nullgate Studios
-## Version: 1.0.0-beta.1
+## Version: 1.0.0-beta.2
 ## X-Curse-Project-ID: 1819014
 ## IconTexture: Interface\Icons\INV_Drink_18
 ## SavedVariables: NullgatesFoodWaterDB
@@ -28,5 +28,6 @@ Buttons.lua
 Group.lua
 Stock.lua
 Options.lua
+NullgateReport.lua
 Check.lua
 Core.lua

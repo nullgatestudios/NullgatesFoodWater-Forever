@@ -2,6 +2,18 @@
 
 All notable changes to **Nullgate's Food & Water - Forever** are documented below.
 
+## [1.0.0-beta.2] - 2026-11-24
+
+### New
+
+- **Bug report window.** `/nfw check` now opens a window with its report, ready to copy.
+- Press Ctrl+C to copy the report, then paste it into the report form at nullgatestudios.com/report?addon=food-water, which opens with this addon already picked. You can report without an account.
+- Every Nullgate addon now uses the same report window.
+
+### Good to know
+
+- The game doesn't let addons open a web browser, so type or copy the link into your browser yourself. The **Select link** button selects it for copying.
+
 ## [1.0.0-beta.1] - 2026-11-20: First Beta
 
 The first test version, looking for mages to try it out. Everything below is built and tested outside the game, but not yet on a real mage, so please report anything that doesn't work.

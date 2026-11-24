@@ -208,6 +208,12 @@ OK(NullgatesFoodWaterDB.locked == true, "/nfw lock locks the bar")
 
 -- --- /nfw check -------------------------------------------------------------------------
 SlashCmdList.NULLGATESFOODWATER("check")
+do -- the report window every Nullgate addon shares
+    local w = NullgateReportWindow
+    OK(w and w.shown and w.url == "https://nullgatestudios.com/report?addon=food-water", "check opens the shared report window with this addon's link")
+    OK(w and w.text and w.text:find("Addon: food-water\nNullgate's Food & Water - Forever ", 1, true) == 1, "the report starts with the addon's slug and name")
+    OK(w and w.box.text == w.text and w.link.text == w.url, "the report and the link are in the window, ready to copy")
+end
 local text = table.concat(NullgatesFoodWaterDB.check or {}, "\n")
 OK(text:find("C_SpellBook.IsSpellKnown=yes", 1, true) ~= nil, "check reports which calls exist")
 OK(text:find("water: best known rank by Ranks.Pick = 10140", 1, true) ~= nil, "check reports the best known rank")
